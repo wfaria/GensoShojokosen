@@ -2,6 +2,11 @@
 using System.Collections;
 using UnityUtilLib;
 
+public enum CharacterFacing {
+	Left = 1,
+	Right = -1
+}
+
 [RequireComponent(typeof(Rigidbody2D))]
 [RequireComponent(typeof(Collider2D))]
 public abstract class AbstractCharacter : MonoBehaviour {
@@ -20,31 +25,48 @@ public abstract class AbstractCharacter : MonoBehaviour {
 	private float jumpDampening = 0.5f;
 
 	private Rigidbody2D rigBod;
-	[SerializeField]
-	private int jumpsRemaining;
-	private bool grounded;
+	private int jumpsRemaining = 2;
+
+	private bool grounded = true;
 	public bool IsGrounded {
 		get {
 			return grounded;
 		}
 	}
 
+	private CharacterFacing facingDirection = CharacterFacing.Right;
+	public CharacterFacing FacingDirection {
+		get {
+			return facingDirection;
+		}
+	}
+
 	//TODO: implement
 	private bool running;
 	private bool hit;
+	private MultiplayerInput.PlayerInput controlInput;
 
 	private void Awake() {
 		rigBod = rigidbody2D;
 		hit = false;
+		controlInput = MultiplayerInput.GetPlayerControl (1);
 	}
 
 	//FixedUpdate is for handling physics/control
 	protected virtual void FixedUpdate() {
 		float dt = Time.fixedDeltaTime;
-		float horizontal = Input.GetAxisRaw ("Horizontal");
-		float vertical = Input.GetAxisRaw ("Vertical");
+		float horizontal = controlInput.GetAxisRaw ("Horizontal");
+		float vertical = controlInput.GetAxisRaw ("Vertical");
 		float m = rigBod.mass;
 		Vector2 v = rigBod.velocity;
+
+		if(v.x > 0) {
+			facingDirection = CharacterFacing.Right;
+		} else if(v.x < 0) {
+			facingDirection = CharacterFacing.Left;
+		}
+
+		transform.rotation = Quaternion.Euler (0f, 90 * (int)facingDirection, 0f);
 
 		float horizontalSpeed = (running) ? runSpeed : walkSpeed;
 		Vector2 movementForce = Vector2.right * (horizontalSpeed - v.magnitude);
@@ -52,13 +74,13 @@ public abstract class AbstractCharacter : MonoBehaviour {
 		rigBod.AddForce (movementForce);
 		//If on the ground
 		if(grounded || jumpsRemaining > 0) {
-			if(Input.GetButtonDown("Vertical") && vertical > 0f && jumpsRemaining > 0){
+			if(controlInput.GetButtonDown("Vertical") && vertical > 0f && jumpsRemaining > 0){
 				Jump (jumpHeight * Mathf.Pow(jumpDampening, jumpCount - jumpsRemaining), dt);
 				--jumpsRemaining;
 			}
 		}
 
-		Debug.Log ("" + horizontal + " " + v + " " + movementForce);
+		//Debug.Log ("" + horizontal + " " + v + " " + movementForce);
 	}
 
 	void OnCollisionEnter2D(Collision2D col) {

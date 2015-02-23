@@ -43,9 +43,12 @@ public class MultiplayerInput : StaticGameObject<MultiplayerInput> {
 
 	public static PlayerInput GetPlayerControl(int player) {
 		if(player < 1 || player > PlayerCount) {
-			return playerInputs[player - 1];
-		} else {
 			throw new System.IndexOutOfRangeException("Player Number has to be between 1 and " + PlayerCount);
+		} else {
+			for(int i = 0; i < playerInputs.Length; i++) {
+				Debug.Log(playerInputs[i]);
+			}
+			return playerInputs[player - 1];
 		}
 	}
 
@@ -96,6 +99,7 @@ public class MultiplayerInput : StaticGameObject<MultiplayerInput> {
 		playerInputs = new PlayerInput[playerCount];
 		for(int i = 0; i < playerCount; i++) {
 			playerInputs[i] = new PlayerInput(i + 1);
+			Debug.Log(playerInputs[i]);
 		}
 	}
 }
