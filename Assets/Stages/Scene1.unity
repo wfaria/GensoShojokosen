@@ -476,9 +476,9 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 268423681}
-  m_LocalRotation: {x: .1305262, y: 0, z: 0, w: .991444886}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: .620000005, y: 2.88000011, z: -4.51999998}
-  m_LocalScale: {x: 1, y: 2.12812471, z: 2.12812495}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -504,8 +504,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93e43eb5416ed7149a3d023a0087bdc2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dampTime: .150000006
   target: {fileID: 1383068757}
+  trackSpeed: 5
 --- !u!1 &276302097
 GameObject:
   m_ObjectHideFlags: 0
@@ -1957,6 +1957,7 @@ MonoBehaviour:
   jumpHeight: 5
   jumpCount: 2
   jumpDampening: .5
+  modelTransform: {fileID: 671736212}
 --- !u!58 &1383068761
 CircleCollider2D:
   m_ObjectHideFlags: 0

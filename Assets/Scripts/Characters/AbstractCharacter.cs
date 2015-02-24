@@ -3,8 +3,8 @@ using System.Collections;
 using UnityUtilLib;
 
 public enum CharacterFacing {
-	Left = 1,
-	Right = -1
+	Left = -1,
+	Right = 1
 }
 
 [RequireComponent(typeof(Rigidbody2D))]
@@ -23,6 +23,8 @@ public abstract class AbstractCharacter : MonoBehaviour {
 	private int jumpCount = 2;
 	[SerializeField]
 	private float jumpDampening = 0.5f;
+	[SerializeField]
+	private Transform modelTransform;
 
 	private Rigidbody2D rigBod;
 	private int jumpsRemaining = 2;
@@ -40,6 +42,8 @@ public abstract class AbstractCharacter : MonoBehaviour {
 			return facingDirection;
 		}
 	}
+
+	private const float facingDeadZone = 0.01f;
 
 	//TODO: implement
 	private bool running;
@@ -60,13 +64,15 @@ public abstract class AbstractCharacter : MonoBehaviour {
 		float m = rigBod.mass;
 		Vector2 v = rigBod.velocity;
 
-		if(v.x > 0) {
-			facingDirection = CharacterFacing.Right;
-		} else if(v.x < 0) {
-			facingDirection = CharacterFacing.Left;
+		if(Mathf.Abs(v.x) > facingDeadZone) {
+			if(v.x > 0) {
+				facingDirection = CharacterFacing.Right;
+			} else if(v.x < 0) {
+				facingDirection = CharacterFacing.Left;
+			}
 		}
 
-		transform.rotation = Quaternion.Euler (0f, 90 * (int)facingDirection, 0f);
+		modelTransform.rotation = Quaternion.Euler (0f, 90 * (int)facingDirection, 0f);
 
 		float horizontalSpeed = (running) ? runSpeed : walkSpeed;
 		Vector2 movementForce = Vector2.right * (horizontalSpeed - v.magnitude);
@@ -102,13 +108,13 @@ public abstract class AbstractCharacter : MonoBehaviour {
 	private void Jump(float height, float dt) {
 		Vector2 v = rigBod.velocity;
 		float m = rigBod.mass;
-		float g = rigBod.gravityScale * Physics2D.gravity.magnitude;
+		float g = Physics.gravity.magnitude;
 		// 1/2mv^2 = mgh
 		// v^2 = 2gh
 		// v = sqrt(2gh)
 		float v0 = Mathf.Sqrt(2f * g * height);
 		// f = ma
 		// a = (vf - v0) / dt
-		rigBod.AddForce(Vector2.up * m * (v0 - v.y) / dt);
+		rigBod.velocity += v0 * Vector2.up;
 	}
 }
