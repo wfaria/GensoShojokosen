@@ -13,19 +13,5 @@ Current Tasklist can be found: [here](https://docs.google.com/spreadsheets/d/1oK
 
 [Current Team Members](https://github.com/james7132/GensoSmashRoyale/wiki/Current-Team)
 
-
-----
-
-We have decided on a preliminary cast! They are as follows:
-
+#Current Characters in development:
 * [Reimu](https://github.com/james7132/GensoSmashRoyale/wiki/Reimu)
-* [Marisa](https://github.com/james7132/GensoSmashRoyale/wiki/Marisa)
-* Miko
-* Wriggle
-* Byakuren
-* Sukuna
-* Sanae
-* Youmu
-* Remilia/Sakuya
-* Utsuho
-* Nitori
