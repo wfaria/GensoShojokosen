@@ -1,4 +1,4 @@
-# Genso Smash Royale
+# Genso Shojokosen (幻想少女交戦)
 
 A open source Touhou x Smash Bros game created in Unity3D. 
 
