@@ -14,11 +14,11 @@ TagManager:
   Builtin Layer 6: 
   Builtin Layer 7: 
   User Layer 8: Camera
-  User Layer 9: Player 1
-  User Layer 10: Player 2
-  User Layer 11: Player 3
-  User Layer 12: Player 4
-  User Layer 13: Jumpthrough
+  User Layer 9: Hurtbox
+  User Layer 10: Jumpthrough
+  User Layer 11: 
+  User Layer 12: 
+  User Layer 13: 
   User Layer 14: 
   User Layer 15: 
   User Layer 16: 
