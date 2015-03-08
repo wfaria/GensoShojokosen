@@ -1,5 +1,5 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 
-public class TestCharacter : AbstractCharacter {
+public class TestCharacter : Character {
 }

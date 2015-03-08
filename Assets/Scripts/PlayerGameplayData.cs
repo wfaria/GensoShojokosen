@@ -1,9 +1,9 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 
 public class PlayerGameplayData : MonoBehaviour {
 	[SerializeField]
-	private AbstractCharacter character;
+	private Character character;
 	
 	[SerializeField]
 	private Transform spawnLocation;

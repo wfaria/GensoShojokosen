@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityUtilLib;
+using TeamUtility.IO;
 
 public class MultiplayerInput : StaticGameObject<MultiplayerInput> {
 
@@ -45,9 +46,6 @@ public class MultiplayerInput : StaticGameObject<MultiplayerInput> {
 		if(player < 1 || player > PlayerCount) {
 			throw new System.IndexOutOfRangeException("Player Number has to be between 1 and " + PlayerCount);
 		} else {
-			for(int i = 0; i < playerInputs.Length; i++) {
-				Debug.Log(playerInputs[i]);
-			}
 			return playerInputs[player - 1];
 		}
 	}
@@ -70,23 +68,23 @@ public class MultiplayerInput : StaticGameObject<MultiplayerInput> {
 		}
 
 		public float GetAxis(string axis) {
-			return Input.GetAxis (AxisString(axis));
+			return InputManager.GetAxis (AxisString(axis));
 		}
 
 		public float GetAxisRaw(string axis) {
-			return Input.GetAxisRaw (AxisString(axis));
+			return InputManager.GetAxisRaw (AxisString(axis));
 		}
 
 		public bool GetButton(string axis) {
-			return Input.GetButton (AxisString(axis));
+			return InputManager.GetButton (AxisString(axis));
 		}
 
 		public bool GetButtonDown(string axis) {
-			return Input.GetButtonDown (AxisString(axis));
+			return InputManager.GetButtonDown (AxisString(axis));
 		}
 
 		public bool GetButtonUp(string axis) {
-			return Input.GetButtonUp (AxisString(axis));
+			return InputManager.GetButtonUp (AxisString(axis));
 		}
 	}
 
@@ -99,7 +97,6 @@ public class MultiplayerInput : StaticGameObject<MultiplayerInput> {
 		playerInputs = new PlayerInput[playerCount];
 		for(int i = 0; i < playerCount; i++) {
 			playerInputs[i] = new PlayerInput(i + 1);
-			Debug.Log(playerInputs[i]);
 		}
 	}
 }

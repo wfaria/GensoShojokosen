@@ -9,7 +9,7 @@ public enum CharacterFacing {
 
 [RequireComponent(typeof(Rigidbody2D))]
 [RequireComponent(typeof(Collider2D))]
-public abstract class AbstractCharacter : MonoBehaviour {
+public abstract class Character : MonoBehaviour {
 	
 	private const string groundedTag = "Ground";
 
@@ -51,7 +51,7 @@ public abstract class AbstractCharacter : MonoBehaviour {
 	private MultiplayerInput.PlayerInput controlInput;
 
 	private void Awake() {
-		rigBod = rigidbody2D;
+		rigBod = GetComponent<Rigidbody2D>();
 		hit = false;
 		controlInput = MultiplayerInput.GetPlayerControl (1);
 	}
@@ -59,8 +59,8 @@ public abstract class AbstractCharacter : MonoBehaviour {
 	//FixedUpdate is for handling physics/control
 	protected virtual void FixedUpdate() {
 		float dt = Time.fixedDeltaTime;
-		float horizontal = controlInput.GetAxisRaw ("Horizontal");
-		float vertical = controlInput.GetAxisRaw ("Vertical");
+		float horizontal = controlInput.GetAxisRaw ("Left Stick Horizontal");
+		float vertical = controlInput.GetAxisRaw ("Left Stick Vertical");
 		float m = rigBod.mass;
 		Vector2 v = rigBod.velocity;
 
@@ -80,7 +80,7 @@ public abstract class AbstractCharacter : MonoBehaviour {
 		rigBod.AddForce (movementForce);
 		//If on the ground
 		if(grounded || jumpsRemaining > 0) {
-			if(controlInput.GetButtonDown("Vertical") && vertical > 0f && jumpsRemaining > 0){
+			if(controlInput.GetButtonDown("Left Stick Vertical") && vertical > 0f && jumpsRemaining > 0){
 				Jump (jumpHeight * Mathf.Pow(jumpDampening, jumpCount - jumpsRemaining), dt);
 				--jumpsRemaining;
 			}

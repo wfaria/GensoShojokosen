@@ -11,7 +11,7 @@ namespace UnityUtilLib {
 		private Vector2 offset;
 
 		void Start() {
-			rend = renderer;
+			rend = GetComponent<Renderer>();
 			rend.material.mainTexture.wrapMode = TextureWrapMode.Repeat;
 		}
 
