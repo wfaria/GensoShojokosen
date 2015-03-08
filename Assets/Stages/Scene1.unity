@@ -1368,7 +1368,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 1384919649}
   - 114: {fileID: 1384919648}
-  - 114: {fileID: 1384919650}
   - 114: {fileID: 1384919651}
   m_Layer: 0
   m_Name: InputManager
@@ -2009,10 +2008,10 @@ MonoBehaviour:
       joystick: 3
     - name: Player 1 Left Stick Horizontal
       description: 
-      positive: 0
-      negative: 0
-      altPositive: 0
-      altNegative: 0
+      positive: 275
+      negative: 276
+      altPositive: 97
+      altNegative: 100
       deadZone: 0
       gravity: 1
       sensitivity: 1
@@ -2400,7 +2399,1018 @@ MonoBehaviour:
       axis: 5
       joystick: 3
     isExpanded: 0
-  defaultConfiguration: Windows_Gamepad
+  - name: KeyboardAndMouse
+    axes:
+    - name: Player 1 Button A
+      description: 
+      positive: 330
+      negative: 0
+      altPositive: 0
+      altNegative: 0
+      deadZone: 0
+      gravity: 1
+      sensitivity: 1
+      snap: 0
+      invert: 0
+      type: 0
+      axis: 0
+      joystick: 0
+    - name: Player 2 Button A
+      description: 
+      positive: 330
+      negative: 0
+      altPositive: 0
+      altNegative: 0
+      deadZone: 0
+      gravity: 1
+      sensitivity: 1
+      snap: 0
+      invert: 0
+      type: 0
+      axis: 0
+      joystick: 1
+    - name: Player 3 Button A
+      description: 
+      positive: 330
+      negative: 0
+      altPositive: 0
+      altNegative: 0
+      deadZone: 0
+      gravity: 1
+      sensitivity: 1
+      snap: 0
+      invert: 0
+      type: 0
+      axis: 0
+      joystick: 2
+    - name: Player 4 Button A
+      description: 
+      positive: 330
+      negative: 0
+      altPositive: 0
+      altNegative: 0
+      deadZone: 0
+      gravity: 1
+      sensitivity: 1
+      snap: 0
+      invert: 0
+      type: 0
+      axis: 0
+      joystick: 3
+    - name: Player 1 Button B
+      description: 
+      positive: 331
+      negative: 0
+      altPositive: 0
+      altNegative: 0
+      deadZone: 0
+      gravity: 1
+      sensitivity: 1
+      snap: 0
+      invert: 0
+      type: 0
+      axis: 0
+      joystick: 0
+    - name: Player 2 Button B
+      description: 
+      positive: 331
+      negative: 0
+      altPositive: 0
+      altNegative: 0
+      deadZone: 0
+      gravity: 1
+      sensitivity: 1
+      snap: 0
+      invert: 0
+      type: 0
+      axis: 0
+      joystick: 1
+    - name: Player 3 Button B
+      description: 
+      positive: 331
+      negative: 0
+      altPositive: 0
+      altNegative: 0
+      deadZone: 0
+      gravity: 1
+      sensitivity: 1
+      snap: 0
+      invert: 0
+      type: 0
+      axis: 0
+      joystick: 2
+    - name: Player 4 Button B
+      description: 
+      positive: 331
+      negative: 0
+      altPositive: 0
+      altNegative: 0
+      deadZone: 0
+      gravity: 1
+      sensitivity: 1
+      snap: 0
+      invert: 0
+      type: 0
+      axis: 0
+      joystick: 3
+    - name: Player 1 Button X
+      description: 
+      positive: 332
+      negative: 0
+      altPositive: 0
+      altNegative: 0
+      deadZone: 0
+      gravity: 1
+      sensitivity: 1
+      snap: 0
+      invert: 0
+      type: 0
+      axis: 0
+      joystick: 0
+    - name: Player 2 Button X
+      description: 
+      positive: 332
+      negative: 0
+      altPositive: 0
+      altNegative: 0
+      deadZone: 0
+      gravity: 1
+      sensitivity: 1
+      snap: 0
+      invert: 0
+      type: 0
+      axis: 0
+      joystick: 1
+    - name: Player 3 Button X
+      description: 
+      positive: 332
+      negative: 0
+      altPositive: 0
+      altNegative: 0
+      deadZone: 0
+      gravity: 1
+      sensitivity: 1
+      snap: 0
+      invert: 0
+      type: 0
+      axis: 0
+      joystick: 2
+    - name: Player 4 Button X
+      description: 
+      positive: 332
+      negative: 0
+      altPositive: 0
+      altNegative: 0
+      deadZone: 0
+      gravity: 1
+      sensitivity: 1
+      snap: 0
+      invert: 0
+      type: 0
+      axis: 0
+      joystick: 3
+    - name: Player 1 Button Y
+      description: 
+      positive: 333
+      negative: 0
+      altPositive: 0
+      altNegative: 0
+      deadZone: 0
+      gravity: 1
+      sensitivity: 1
+      snap: 0
+      invert: 0
+      type: 0
+      axis: 0
+      joystick: 0
+    - name: Player 2 Button Y
+      description: 
+      positive: 333
+      negative: 0
+      altPositive: 0
+      altNegative: 0
+      deadZone: 0
+      gravity: 1
+      sensitivity: 1
+      snap: 0
+      invert: 0
+      type: 0
+      axis: 0
+      joystick: 1
+    - name: Player 3 Button Y
+      description: 
+      positive: 333
+      negative: 0
+      altPositive: 0
+      altNegative: 0
+      deadZone: 0
+      gravity: 1
+      sensitivity: 1
+      snap: 0
+      invert: 0
+      type: 0
+      axis: 0
+      joystick: 2
+    - name: Player 4 Button Y
+      description: 
+      positive: 333
+      negative: 0
+      altPositive: 0
+      altNegative: 0
+      deadZone: 0
+      gravity: 1
+      sensitivity: 1
+      snap: 0
+      invert: 0
+      type: 0
+      axis: 0
+      joystick: 3
+    - name: Player 1 Left Bumper
+      description: 
+      positive: 334
+      negative: 0
+      altPositive: 0
+      altNegative: 0
+      deadZone: 0
+      gravity: 1
+      sensitivity: 1
+      snap: 0
+      invert: 0
+      type: 0
+      axis: 0
+      joystick: 0
+    - name: Player 2 Left Bumper
+      description: 
+      positive: 334
+      negative: 0
+      altPositive: 0
+      altNegative: 0
+      deadZone: 0
+      gravity: 1
+      sensitivity: 1
+      snap: 0
+      invert: 0
+      type: 0
+      axis: 0
+      joystick: 1
+    - name: Player 3 Left Bumper
+      description: 
+      positive: 334
+      negative: 0
+      altPositive: 0
+      altNegative: 0
+      deadZone: 0
+      gravity: 1
+      sensitivity: 1
+      snap: 0
+      invert: 0
+      type: 0
+      axis: 0
+      joystick: 2
+    - name: Player 4 Left Bumper
+      description: 
+      positive: 334
+      negative: 0
+      altPositive: 0
+      altNegative: 0
+      deadZone: 0
+      gravity: 1
+      sensitivity: 1
+      snap: 0
+      invert: 0
+      type: 0
+      axis: 0
+      joystick: 3
+    - name: Player 1 Right Bumper
+      description: 
+      positive: 335
+      negative: 0
+      altPositive: 0
+      altNegative: 0
+      deadZone: 0
+      gravity: 1
+      sensitivity: 1
+      snap: 0
+      invert: 0
+      type: 0
+      axis: 0
+      joystick: 0
+    - name: Player 2 Right Bumper
+      description: 
+      positive: 335
+      negative: 0
+      altPositive: 0
+      altNegative: 0
+      deadZone: 0
+      gravity: 1
+      sensitivity: 1
+      snap: 0
+      invert: 0
+      type: 0
+      axis: 0
+      joystick: 1
+    - name: Player 3 Right Bumper
+      description: 
+      positive: 335
+      negative: 0
+      altPositive: 0
+      altNegative: 0
+      deadZone: 0
+      gravity: 1
+      sensitivity: 1
+      snap: 0
+      invert: 0
+      type: 0
+      axis: 0
+      joystick: 2
+    - name: Player 4 Right Bumper
+      description: 
+      positive: 335
+      negative: 0
+      altPositive: 0
+      altNegative: 0
+      deadZone: 0
+      gravity: 1
+      sensitivity: 1
+      snap: 0
+      invert: 0
+      type: 0
+      axis: 0
+      joystick: 3
+    - name: Player 1 Back
+      description: 
+      positive: 336
+      negative: 0
+      altPositive: 0
+      altNegative: 0
+      deadZone: 0
+      gravity: 1
+      sensitivity: 1
+      snap: 0
+      invert: 0
+      type: 0
+      axis: 0
+      joystick: 0
+    - name: Player 2 Back
+      description: 
+      positive: 336
+      negative: 0
+      altPositive: 0
+      altNegative: 0
+      deadZone: 0
+      gravity: 1
+      sensitivity: 1
+      snap: 0
+      invert: 0
+      type: 0
+      axis: 0
+      joystick: 1
+    - name: Player 3 Back
+      description: 
+      positive: 336
+      negative: 0
+      altPositive: 0
+      altNegative: 0
+      deadZone: 0
+      gravity: 1
+      sensitivity: 1
+      snap: 0
+      invert: 0
+      type: 0
+      axis: 0
+      joystick: 2
+    - name: Player 4 Back
+      description: 
+      positive: 336
+      negative: 0
+      altPositive: 0
+      altNegative: 0
+      deadZone: 0
+      gravity: 1
+      sensitivity: 1
+      snap: 0
+      invert: 0
+      type: 0
+      axis: 0
+      joystick: 3
+    - name: Player 1 Start
+      description: 
+      positive: 337
+      negative: 0
+      altPositive: 0
+      altNegative: 0
+      deadZone: 0
+      gravity: 1
+      sensitivity: 1
+      snap: 0
+      invert: 0
+      type: 0
+      axis: 0
+      joystick: 0
+    - name: Player 2 Start
+      description: 
+      positive: 337
+      negative: 0
+      altPositive: 0
+      altNegative: 0
+      deadZone: 0
+      gravity: 1
+      sensitivity: 1
+      snap: 0
+      invert: 0
+      type: 0
+      axis: 0
+      joystick: 1
+    - name: Player 3 Start
+      description: 
+      positive: 337
+      negative: 0
+      altPositive: 0
+      altNegative: 0
+      deadZone: 0
+      gravity: 1
+      sensitivity: 1
+      snap: 0
+      invert: 0
+      type: 0
+      axis: 0
+      joystick: 2
+    - name: Player 4 Start
+      description: 
+      positive: 337
+      negative: 0
+      altPositive: 0
+      altNegative: 0
+      deadZone: 0
+      gravity: 1
+      sensitivity: 1
+      snap: 0
+      invert: 0
+      type: 0
+      axis: 0
+      joystick: 3
+    - name: Player 1 Left Stick Button
+      description: 
+      positive: 338
+      negative: 0
+      altPositive: 0
+      altNegative: 0
+      deadZone: 0
+      gravity: 1
+      sensitivity: 1
+      snap: 0
+      invert: 0
+      type: 0
+      axis: 0
+      joystick: 0
+    - name: Player 2 Left Stick Button
+      description: 
+      positive: 338
+      negative: 0
+      altPositive: 0
+      altNegative: 0
+      deadZone: 0
+      gravity: 1
+      sensitivity: 1
+      snap: 0
+      invert: 0
+      type: 0
+      axis: 0
+      joystick: 1
+    - name: Player 3 Left Stick Button
+      description: 
+      positive: 338
+      negative: 0
+      altPositive: 0
+      altNegative: 0
+      deadZone: 0
+      gravity: 1
+      sensitivity: 1
+      snap: 0
+      invert: 0
+      type: 0
+      axis: 0
+      joystick: 2
+    - name: Player 4 Left Stick Button
+      description: 
+      positive: 338
+      negative: 0
+      altPositive: 0
+      altNegative: 0
+      deadZone: 0
+      gravity: 1
+      sensitivity: 1
+      snap: 0
+      invert: 0
+      type: 0
+      axis: 0
+      joystick: 3
+    - name: Player 1 Right Stick Button
+      description: 
+      positive: 339
+      negative: 0
+      altPositive: 0
+      altNegative: 0
+      deadZone: 0
+      gravity: 1
+      sensitivity: 1
+      snap: 0
+      invert: 0
+      type: 0
+      axis: 0
+      joystick: 0
+    - name: Player 2 Right Stick Button
+      description: 
+      positive: 339
+      negative: 0
+      altPositive: 0
+      altNegative: 0
+      deadZone: 0
+      gravity: 1
+      sensitivity: 1
+      snap: 0
+      invert: 0
+      type: 0
+      axis: 0
+      joystick: 1
+    - name: Player 3 Right Stick Button
+      description: 
+      positive: 339
+      negative: 0
+      altPositive: 0
+      altNegative: 0
+      deadZone: 0
+      gravity: 1
+      sensitivity: 1
+      snap: 0
+      invert: 0
+      type: 0
+      axis: 0
+      joystick: 2
+    - name: Player 4 Right Stick Button
+      description: 
+      positive: 339
+      negative: 0
+      altPositive: 0
+      altNegative: 0
+      deadZone: 0
+      gravity: 1
+      sensitivity: 1
+      snap: 0
+      invert: 0
+      type: 0
+      axis: 0
+      joystick: 3
+    - name: Player 1 Left Stick Vertical
+      description: 
+      positive: 273
+      negative: 274
+      altPositive: 119
+      altNegative: 115
+      deadZone: 0
+      gravity: 1
+      sensitivity: 1
+      snap: 0
+      invert: 0
+      type: 2
+      axis: 1
+      joystick: 0
+    - name: Player 2 Left Stick Vertical
+      description: 
+      positive: 0
+      negative: 0
+      altPositive: 0
+      altNegative: 0
+      deadZone: 0
+      gravity: 1
+      sensitivity: 1
+      snap: 0
+      invert: 0
+      type: 3
+      axis: 1
+      joystick: 1
+    - name: Player 3 Left Stick Vertical
+      description: 
+      positive: 0
+      negative: 0
+      altPositive: 0
+      altNegative: 0
+      deadZone: 0
+      gravity: 1
+      sensitivity: 1
+      snap: 0
+      invert: 0
+      type: 3
+      axis: 1
+      joystick: 2
+    - name: Player 4 Left Stick Vertical
+      description: 
+      positive: 0
+      negative: 0
+      altPositive: 0
+      altNegative: 0
+      deadZone: 0
+      gravity: 1
+      sensitivity: 1
+      snap: 0
+      invert: 0
+      type: 3
+      axis: 1
+      joystick: 3
+    - name: Player 1 Left Stick Horizontal
+      description: 
+      positive: 275
+      negative: 276
+      altPositive: 100
+      altNegative: 97
+      deadZone: 0
+      gravity: 1
+      sensitivity: 1
+      snap: 0
+      invert: 0
+      type: 2
+      axis: 0
+      joystick: 0
+    - name: Player 2 Left Stick Horizontal
+      description: 
+      positive: 0
+      negative: 0
+      altPositive: 0
+      altNegative: 0
+      deadZone: 0
+      gravity: 1
+      sensitivity: 1
+      snap: 0
+      invert: 0
+      type: 3
+      axis: 0
+      joystick: 1
+    - name: Player 3 Left Stick Horizontal
+      description: 
+      positive: 0
+      negative: 0
+      altPositive: 0
+      altNegative: 0
+      deadZone: 0
+      gravity: 1
+      sensitivity: 1
+      snap: 0
+      invert: 0
+      type: 3
+      axis: 0
+      joystick: 2
+    - name: Player 4 Left Stick Horizontal
+      description: 
+      positive: 0
+      negative: 0
+      altPositive: 0
+      altNegative: 0
+      deadZone: 0
+      gravity: 1
+      sensitivity: 1
+      snap: 0
+      invert: 0
+      type: 3
+      axis: 0
+      joystick: 3
+    - name: Player 1 Right Stick Vertical
+      description: 
+      positive: 0
+      negative: 0
+      altPositive: 0
+      altNegative: 0
+      deadZone: 0
+      gravity: 1
+      sensitivity: 1
+      snap: 0
+      invert: 0
+      type: 3
+      axis: 4
+      joystick: 0
+    - name: Player 2 Right Stick Vertical
+      description: 
+      positive: 0
+      negative: 0
+      altPositive: 0
+      altNegative: 0
+      deadZone: 0
+      gravity: 1
+      sensitivity: 1
+      snap: 0
+      invert: 0
+      type: 3
+      axis: 4
+      joystick: 1
+    - name: Player 3 Right Stick Vertical
+      description: 
+      positive: 0
+      negative: 0
+      altPositive: 0
+      altNegative: 0
+      deadZone: 0
+      gravity: 1
+      sensitivity: 1
+      snap: 0
+      invert: 0
+      type: 3
+      axis: 4
+      joystick: 2
+    - name: Player 4 Right Stick Vertical
+      description: 
+      positive: 0
+      negative: 0
+      altPositive: 0
+      altNegative: 0
+      deadZone: 0
+      gravity: 1
+      sensitivity: 1
+      snap: 0
+      invert: 0
+      type: 3
+      axis: 4
+      joystick: 3
+    - name: Player 1 Right Stick Horizontal
+      description: 
+      positive: 0
+      negative: 0
+      altPositive: 0
+      altNegative: 0
+      deadZone: 0
+      gravity: 1
+      sensitivity: 1
+      snap: 0
+      invert: 0
+      type: 3
+      axis: 3
+      joystick: 0
+    - name: Player 2 Right Stick Horizontal
+      description: 
+      positive: 0
+      negative: 0
+      altPositive: 0
+      altNegative: 0
+      deadZone: 0
+      gravity: 1
+      sensitivity: 1
+      snap: 0
+      invert: 0
+      type: 3
+      axis: 3
+      joystick: 1
+    - name: Player 3 Right Stick Horizontal
+      description: 
+      positive: 0
+      negative: 0
+      altPositive: 0
+      altNegative: 0
+      deadZone: 0
+      gravity: 1
+      sensitivity: 1
+      snap: 0
+      invert: 0
+      type: 3
+      axis: 3
+      joystick: 2
+    - name: Player 4 Right Stick Horizontal
+      description: 
+      positive: 0
+      negative: 0
+      altPositive: 0
+      altNegative: 0
+      deadZone: 0
+      gravity: 1
+      sensitivity: 1
+      snap: 0
+      invert: 0
+      type: 3
+      axis: 3
+      joystick: 3
+    - name: Player 1 Left Trigger
+      description: 
+      positive: 0
+      negative: 0
+      altPositive: 0
+      altNegative: 0
+      deadZone: 0
+      gravity: 1
+      sensitivity: 1
+      snap: 0
+      invert: 0
+      type: 3
+      axis: 2
+      joystick: 0
+    - name: Player 2 Left Trigger
+      description: 
+      positive: 0
+      negative: 0
+      altPositive: 0
+      altNegative: 0
+      deadZone: 0
+      gravity: 1
+      sensitivity: 1
+      snap: 0
+      invert: 0
+      type: 3
+      axis: 2
+      joystick: 1
+    - name: Player 3 Left Trigger
+      description: 
+      positive: 0
+      negative: 0
+      altPositive: 0
+      altNegative: 0
+      deadZone: 0
+      gravity: 1
+      sensitivity: 1
+      snap: 0
+      invert: 0
+      type: 3
+      axis: 2
+      joystick: 2
+    - name: Player 4 Left Trigger
+      description: 
+      positive: 0
+      negative: 0
+      altPositive: 0
+      altNegative: 0
+      deadZone: 0
+      gravity: 1
+      sensitivity: 1
+      snap: 0
+      invert: 0
+      type: 3
+      axis: 2
+      joystick: 3
+    - name: Player 1 Right Trigger
+      description: 
+      positive: 0
+      negative: 0
+      altPositive: 0
+      altNegative: 0
+      deadZone: 0
+      gravity: 1
+      sensitivity: 1
+      snap: 0
+      invert: 0
+      type: 3
+      axis: 2
+      joystick: 0
+    - name: Player 2 Right Trigger
+      description: 
+      positive: 0
+      negative: 0
+      altPositive: 0
+      altNegative: 0
+      deadZone: 0
+      gravity: 1
+      sensitivity: 1
+      snap: 0
+      invert: 0
+      type: 3
+      axis: 2
+      joystick: 1
+    - name: Player 3 Right Trigger
+      description: 
+      positive: 0
+      negative: 0
+      altPositive: 0
+      altNegative: 0
+      deadZone: 0
+      gravity: 1
+      sensitivity: 1
+      snap: 0
+      invert: 0
+      type: 3
+      axis: 2
+      joystick: 2
+    - name: Player 4 Right Trigger
+      description: 
+      positive: 0
+      negative: 0
+      altPositive: 0
+      altNegative: 0
+      deadZone: 0
+      gravity: 1
+      sensitivity: 1
+      snap: 0
+      invert: 0
+      type: 3
+      axis: 2
+      joystick: 3
+    - name: Player 1 DPAD Vertical
+      description: 
+      positive: 0
+      negative: 0
+      altPositive: 0
+      altNegative: 0
+      deadZone: 0
+      gravity: 1
+      sensitivity: 1
+      snap: 0
+      invert: 0
+      type: 3
+      axis: 6
+      joystick: 0
+    - name: Player 2 DPAD Vertical
+      description: 
+      positive: 0
+      negative: 0
+      altPositive: 0
+      altNegative: 0
+      deadZone: 0
+      gravity: 1
+      sensitivity: 1
+      snap: 0
+      invert: 0
+      type: 3
+      axis: 6
+      joystick: 1
+    - name: Player 3 DPAD Vertical
+      description: 
+      positive: 0
+      negative: 0
+      altPositive: 0
+      altNegative: 0
+      deadZone: 0
+      gravity: 1
+      sensitivity: 1
+      snap: 0
+      invert: 0
+      type: 3
+      axis: 6
+      joystick: 2
+    - name: Player 4 DPAD Vertical
+      description: 
+      positive: 0
+      negative: 0
+      altPositive: 0
+      altNegative: 0
+      deadZone: 0
+      gravity: 1
+      sensitivity: 1
+      snap: 0
+      invert: 0
+      type: 3
+      axis: 6
+      joystick: 3
+    - name: Player 1 DPAD Horizontal
+      description: 
+      positive: 0
+      negative: 0
+      altPositive: 0
+      altNegative: 0
+      deadZone: 0
+      gravity: 1
+      sensitivity: 1
+      snap: 0
+      invert: 0
+      type: 3
+      axis: 5
+      joystick: 0
+    - name: Player 2 DPAD Horizontal
+      description: 
+      positive: 0
+      negative: 0
+      altPositive: 0
+      altNegative: 0
+      deadZone: 0
+      gravity: 1
+      sensitivity: 1
+      snap: 0
+      invert: 0
+      type: 3
+      axis: 5
+      joystick: 1
+    - name: Player 3 DPAD Horizontal
+      description: 
+      positive: 0
+      negative: 0
+      altPositive: 0
+      altNegative: 0
+      deadZone: 0
+      gravity: 1
+      sensitivity: 1
+      snap: 0
+      invert: 0
+      type: 3
+      axis: 5
+      joystick: 2
+    - name: Player 4 DPAD Horizontal
+      description: 
+      positive: 0
+      negative: 0
+      altPositive: 0
+      altNegative: 0
+      deadZone: 0
+      gravity: 1
+      sensitivity: 1
+      snap: 0
+      invert: 0
+      type: 3
+      axis: 5
+      joystick: 3
+    isExpanded: 1
+  defaultConfiguration: KeyboardAndMouse
   dontDestroyOnLoad: 1
   ignoreTimescale: 1
 --- !u!4 &1384919649
@@ -2415,29 +3425,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1250365802}
   m_RootOrder: 0
---- !u!114 &1384919650
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1384919647}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e63496cd80558db4aa847b75970a8728, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dontDestroyOnLoad: 1
-  allowRealtimeInputDeviceSwitch: 1
-  updateInputDeviceInterval: 1
-  updateJoystickCountInterval: 1
-  keyboardConfiguration: KeyboardAndMouse
-  windowsJoystickConfiguration: Windows_Gamepad
-  osxJoystickConfiguration: OSX_Gamepad
-  linuxJoystickConfiguration: Linux_Gamepad
-  leftTriggerAxis: LeftTrigger
-  rightTriggerAxis: RightTrigger
-  dpadHorizontalAxis: DPADHorizontal
-  dpadVerticalAxis: DPADVertical
 --- !u!114 &1384919651
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2466,6 +3453,7 @@ GameObject:
   - 33: {fileID: 1407528120}
   - 23: {fileID: 1407528118}
   - 61: {fileID: 1407528119}
+  - 251: {fileID: 1407528122}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Ground
@@ -2506,7 +3494,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_UsedByEffector: 0
+  m_UsedByEffector: 1
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
@@ -2529,6 +3517,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1244711130}
   m_RootOrder: 0
+--- !u!251 &1407528122
+PlatformEffector2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1407528117}
+  m_Enabled: 1
+  m_ColliderMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_OneWay: 1
+  m_SideFriction: 0
+  m_SideBounce: 0
+  m_SideAngleVariance: 0
 --- !u!1 &1428267378
 GameObject:
   m_PrefabParentObject: {fileID: 100006, guid: 320b1c2af77554f99a1658df4a6d3d5c, type: 3}
@@ -2872,6 +3874,7 @@ GameObject:
   - 33: {fileID: 1711208085}
   - 23: {fileID: 1711208083}
   - 61: {fileID: 1711208084}
+  - 251: {fileID: 1711208087}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Ground
@@ -2912,7 +3915,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_UsedByEffector: 0
+  m_UsedByEffector: 1
   m_Offset: {x: 5.96046448e-08, y: 0}
   serializedVersion: 2
   m_Size: {x: 1, y: .999999821}
@@ -2935,6 +3938,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1244711130}
   m_RootOrder: 2
+--- !u!251 &1711208087
+PlatformEffector2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1711208082}
+  m_Enabled: 1
+  m_ColliderMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_OneWay: 1
+  m_SideFriction: 0
+  m_SideBounce: 0
+  m_SideAngleVariance: 0
 --- !u!1 &1747602468
 GameObject:
   m_PrefabParentObject: {fileID: 100092, guid: 320b1c2af77554f99a1658df4a6d3d5c, type: 3}

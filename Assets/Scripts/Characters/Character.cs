@@ -61,6 +61,7 @@ public abstract class Character : MonoBehaviour {
 		float dt = Time.fixedDeltaTime;
 		float horizontal = controlInput.GetAxisRaw ("Left Stick Horizontal");
 		float vertical = controlInput.GetAxisRaw ("Left Stick Vertical");
+		Debug.Log(horizontal + " " + vertical);
 		float m = rigBod.mass;
 		Vector2 v = rigBod.velocity;
 
@@ -100,7 +101,7 @@ public abstract class Character : MonoBehaviour {
 
 	private void GroundedCheck(GameObject collidedObject, bool groundedValue) {
 		if (collidedObject.CompareTag(groundedTag)) {
-			Debug.Log((groundedValue) ? "Grounded" : "No Longer Grounded");
+			//Debug.Log((groundedValue) ? "Grounded" : "No Longer Grounded");
 			grounded = groundedValue;
 		}
 	}

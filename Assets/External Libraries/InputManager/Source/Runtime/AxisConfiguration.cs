@@ -281,26 +281,34 @@ namespace TeamUtility.IO
 		
 		public bool GetButtonDown()
 		{
-			if(type == InputType.Button)
-				return Input.GetKeyDown(positive) || Input.GetKeyDown(altPositive);
-			else if(type == InputType.RemoteButton)
-				return _remoteButtonState == ButtonState.JustPressed;
-			else if(type == InputType.AnalogButton)
-				return _analogButtonState == ButtonState.JustPressed;
-			
-			return false;
+			switch (type) {
+				case InputType.Button:
+				case InputType.DigitalAxis:
+					return Input.GetKeyDown (positive) || Input.GetKeyDown (altPositive);
+				case InputType.RemoteButton:
+				case InputType.AnalogButton:
+					return _remoteButtonState == ButtonState.JustPressed;
+				case InputType.AnalogAxis:
+					return Input.GetButtonDown (_rawAxisName);
+				default:
+					return false;
+			}
 		}
 		
 		public bool GetButtonUp()
 		{
-			if(type == InputType.Button)
-				return Input.GetKeyUp(positive) || Input.GetKeyUp(altPositive);
-			else if(type == InputType.RemoteButton)
-				return _remoteButtonState == ButtonState.JustReleased;
-			else if(type == InputType.AnalogButton)
-				return _analogButtonState == ButtonState.JustReleased;
-			
-			return false;
+			switch (type) {
+				case InputType.Button:
+				case InputType.DigitalAxis:
+					return Input.GetKeyUp(positive) || Input.GetKeyUp(altPositive);
+				case InputType.RemoteButton:
+				case InputType.AnalogButton:
+					return _remoteButtonState == ButtonState.JustReleased;
+				case InputType.AnalogAxis:
+					return Input.GetButtonUp (_rawAxisName);
+				default:
+					return false;
+			}
 		}
 		
 		public void SetMouseAxis(int axis)
